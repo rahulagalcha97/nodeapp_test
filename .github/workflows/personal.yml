@@ -1,0 +1,11 @@
+name: another workflow test
+
+on: push
+
+jobs:
+  
+  MyJob:
+    runs-on: ubuntu-latest
+    
+    steps: 
+      - run: echo "this is running inside a ${{ runner.os }} server"
